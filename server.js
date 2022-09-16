@@ -18,7 +18,7 @@ app.use(bodyParser.json())
 app.use((req, res, next)=> {
   res.setHeader(
     "Access-Control-Allow-Origin",
-    "https://delivex.herokuapp.com"
+    "https://delivex.onrender.com"
   );
   res.setHeader(
     "Access-Control-Allow-Methods",

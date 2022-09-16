@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.63b19704.css",
+    "main.js": "/static/js/main.fdc85112.js",
+    "static/media/background.jpg": "/static/media/background.f9a817a825c7417fa10c.jpg",
+    "static/media/scoot.png": "/static/media/scoot.1d26b74ccaac64e69613.png",
+    "static/media/Untitled design(3).png": "/static/media/Untitled design(3).625cfd7935efe811e3ec.png",
+    "static/media/track.png": "/static/media/track.a00f79caa3b1b40f523b.png",
+    "static/media/logo gif.gif": "/static/media/logo gif.5cfda8fbf26c00395a90.gif",
+    "static/media/warehouse.jpg": "/static/media/warehouse.43cf83ccb226f634c6d0.jpg",
+    "static/media/productbg.png": "/static/media/productbg.ddefc1abb1ee4066605e.png",
+    "static/media/air.jpg": "/static/media/air.41d7bd4615f86d70e1de.jpg",
+    "static/media/land.jpg": "/static/media/land.98895b05a50c21050827.jpg",
+    "static/media/logo.png": "/static/media/logo.a68302a29e0c0752cc3d.png",
+    "index.html": "/index.html",
+    "main.63b19704.css.map": "/static/css/main.63b19704.css.map",
+    "main.fdc85112.js.map": "/static/js/main.fdc85112.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63b19704.css",
+    "static/js/main.fdc85112.js"
+  ]
+}

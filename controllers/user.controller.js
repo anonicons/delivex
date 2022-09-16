@@ -1,22 +1,31 @@
 const User = require('../models/user.models')
 
 const bycrypt = require('bcryptjs');
-// const Blog = require('../models/blog.models');
 
+// get all users from the database
 const getAllUsers = async  (req,res) => {
-    await User.find()
-     .then(data => res.json(data))
-     .catch(err => res.status(400).json("Error" + err))
+
+    let allUsers;
+    try{
+        allUsers = await User.find()
+    }
+    catch(err){
+        console.log(err)
+        res.status(400).json(err)
+    }
+
+    res.status(200).json(allUsers)
 }
 
 
-
+// register users to the database
 const signup = async (req,res) => {
+    // we are collecting username & password from the client
+
     const  {username,password} = req.body
 
-    // lets check if the email and the username is taken
-    let existingUserWEmail;
-    
+    // lets check if the username is taken
+    let existingUser;
 
     try{
        existingUser = await User.findOne({username})
@@ -28,9 +37,7 @@ const signup = async (req,res) => {
    if(existingUser){
     res.status(400).json({message:"Username Already Taken"})
    }
-   
-   
-// lets encrypt the user password using bycryptjs 
+    // lets encrypt the user password using bycryptjs 
     const hashedPassword = bycrypt.hashSync(password)
 
     const newUser = new User(
@@ -47,22 +54,25 @@ const signup = async (req,res) => {
     res.json("User Saved!")
 }
 
+// login
+
 const login = async (req,res) => {
+    // get username and pasword from client
     const {username,password} = req.body;
     
     // check if user exists
    let existingUser;
 
    try{
-    existingUser = await User.findOne({username})
+     existingUser = await User.findOne({username})
    }
    catch(err){
-  res.status(404).json("error:" + err)
+     res.status(404).json("error:" + err)
    }
 
-if(!existingUser)return res.status(404).json("User Not Found! Please Signup")
+if(!existingUser){res.status(404).json("User Not Found!")}
 
-// check password
+// compare password (sync)
 
 const isPasswordCorrect = bycrypt.compareSync(password,existingUser.password)
 

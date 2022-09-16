@@ -22,7 +22,6 @@ useEffect(
  )
   return (
     <div className='product-details d-flex flex-column align-items-center justify-content-center fonta' >
-       {shipment === true? <>
         <h4> <span className='fw-bold'>Estimated arrival:</span>  (3 days)</h4>
     <h3 className='text-blacked client-mssg'>Dear Mr.{shipment.client}, here is the summary of your shipment</h3>
 
@@ -53,7 +52,7 @@ useEffect(
     <button className='border-0 position-absolute goback-btn btn btn-lg  btn-warning' onClick={()=>navigate("/")}><HomeOutlined /></button>
 
         </div>
-        </> : <h1 className='text-warning big-text'>404 Error</h1>}
+       
     </div>
   )
 }

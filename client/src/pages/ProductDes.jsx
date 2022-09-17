@@ -8,7 +8,7 @@ function ProductDesc() {
     const navigate = useNavigate()
     const id = useParams().id
     const fetchShipment = async () => {
-        const res = await axios.get(`http://localhost:8000/api/shipments/${id}`).catch(err => console.log(err))
+        const res = await axios.get(`/api/shipments/${id}`).catch(err => console.log(err))
 
 
         // get response data
@@ -31,16 +31,16 @@ useEffect(
             {shipment.trackcode}
         </div></div>
      
-        <div className="origin">
-            <p className='text-center m-0 '>Origin destination</p>
+        <div className="origin text-center">
+            <p className=' m-0 '>Origin destination</p>
             <p className='text-secondary m-0'>{shipment.origin}</p>
         </div>
         <div className="title-track fw-bold text-warning"> <ArrowForward />
         </div>
        <div className="title-track fw-bold text-warning"><ArrowBack /></div>
         
-        <div className="final pt-4">
-        <p className='text-center m-0 '>Final destination</p>
+        <div className="final pt-4 text-center">
+        <p className=' m-0 '>Final destination</p>
             <p className='text-secondary m-0'>{shipment.final}</p>
         </div>
 

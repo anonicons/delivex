@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 function TrackCard() {
   const [input,setInput] = useState("")
+  const [error,setError] = useState(false)
   const navigate = useNavigate()
 
   const handleOnChange = (e) => {
@@ -14,7 +15,10 @@ function TrackCard() {
 
   const sendRequest = async ()=>{
 
-    const res = await axios.post('http://localhost:8000/api/shipments/track',{trackcode:input}).catch(err => console.log(err))
+    const res = await axios.post('/api/shipments/track',{trackcode:input}).catch(err => {
+      setError(true)
+      console.log(err)
+    })
 
     // get response
     const data = res.data
@@ -34,6 +38,7 @@ function TrackCard() {
         </div>
         <p className='text-small'>* PLEASE TYPE IN YOUR TRACKING ID TO GET YOUR TRACKING LOCATION INFORMATION</p>
         <form action="" className='d-flex flex-column w-100' onSubmit={handleSubmit}>
+        {error && <p className='text-small text-danger my-2'>Invalid Credentials, try again.</p>}
             <input type="text"  placeholder='ENTER TRACK ID' className='p-2 my-2 track-input' value={input} onChange={handleOnChange}/> 
             <button className='border-0 p-2 my-2 btn btn-md btn-warning rounded-0' type='submit' >TRACK NOW</button>
         </form>

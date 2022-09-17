@@ -17,7 +17,7 @@ function Admin() {
    const dispatch = useDispatch()
 
    const fetchShipments = async () =>{
-   const res = await axios.get('http://localhost:8000/api/shipments/').catch( err => console.log(err))
+   const res = await axios.get('/api/shipments/').catch( err => console.log(err))
 
    const data = await res.data
    return data
@@ -31,7 +31,7 @@ const isLoggedIn = useSelector(st => st.isLoggedIn)
 
 // send request
 const sendRequest = async () => {
-   const res = await axios.post('http://localhost:8000/api/shipments/add',{
+   const res = await axios.post('/api/shipments/add',{
       trackcode: inputs.trackcode,
       client: inputs.client,
       products: inputs.products,
@@ -66,7 +66,7 @@ const handleLogout = () =>{
 }
 // Delete shipment request 
 const deleteRequest = async (id) => {
-   const res = await axios.delete(`http://localhost:8000/api/shipments/${id}`).catch(err=>console.log(err))
+   const res = await axios.delete(`/api/shipments/${id}`).catch(err=>console.log(err))
 
    // response data
    const data = await res.data

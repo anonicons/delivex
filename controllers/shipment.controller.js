@@ -53,7 +53,7 @@ const addShipment =  async (req,res) => {
    catch(err){
     console.log(err)
    }
-    res.status(200).json(allShipments)
+    if(allShipments)res.status(200).json(allShipments)
    
 }
 
@@ -108,12 +108,12 @@ const getById = async (req,res) => {
         existingShipment = await Shipment.findOne({trackcode})
       }
       catch(err){
-        console.log(err)
+        res.status(400).json({message:"Cant Find Shipment"})
       }
       if(!existingShipment){
         res.status(400).json({message:"Cant Find Shipment"})
       }
-    res.status(200).json(existingShipment._id)
+      if(existingShipment)res.status(200).json(existingShipment._id)
     }
 
 

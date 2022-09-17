@@ -15,7 +15,7 @@ const navigate = useNavigate()
   return (
     <div className='showcase container-fluid text-white ps-2 pb-5 w-100 pt-1'>
       <div className='pb-5 text-end text-white'>
-        <div className="text-xsm"><EmailOutlined size="small" className='text-warning'/> connectwithdelivex@yahoo.com</div>
+        <div className="text-xsm"><EmailOutlined size="small" className='text-warning'/> delivaexpress@yahoo.com</div>
       
         <div className='text-xsm'>
           <TimerOutlined size="small" className='text-warning' /> 10.00 - 6.00 Pm

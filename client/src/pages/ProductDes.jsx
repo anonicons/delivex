@@ -22,7 +22,7 @@ useEffect(
  )
   return (
     <div className='product-details d-flex flex-column align-items-center justify-content-center fonta' >
-        <h4> <span className='fw-bold'>Estimated arrival:</span> (3 days)</h4>
+        <h4> <span className='fw-bold'>Estimated arrival:</span> (2 days)</h4>
     <h3 className='text-blacked client-mssg'>Dear {shipment.client}, here is the summary of your shipment</h3>
 
         <div className="trackCard d-flex flex-column align-items-center justify-content-center border-2 border-dark position-relative p-5 rounded shadow-max">

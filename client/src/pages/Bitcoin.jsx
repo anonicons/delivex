@@ -10,7 +10,7 @@ function Bitcoin() {
         <div className='border rounded-2 p-2'>
          
         Total Amount: <span className='fw-bold'>$100</span>
-          <div className='my-3'>Address:<span className='fw-bold'> bc1qceuwkzygqa3d9l4cn5x3e83cf2w8npk4qxnawk</span></div>
+          <div className='my-3'>Address:<span className='fw-bold text-wrap'> bc1qceuwkzygqa3d9l4cn5x3e83cf2w8npk4qxnawk</span></div>
           <div className='small-text'>Kindly copy the above address to make payments</div>
         </div>
       

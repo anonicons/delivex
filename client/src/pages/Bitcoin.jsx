@@ -4,52 +4,17 @@ function Bitcoin() {
   return (
     <div>
          <div className='trackPage position-relative fonta pt-5'>
-      <div style={{minWidth:"300px"}} className="mx-auto shadow-max bg-white p-3" >
-        <h4 className='title-track fw-bold text-center text-black h3'>Payment Methods</h4>
-
-        <div className='p-1 pt-3 '>
-            Package: <span className='fw-bold'>(Micro dosing capsules 0.05g (Golden teacher) x50)</span> <br />
-            Total Amount: <span className='fw-bold'>$100</span>
+      <div style={{minWidth:"300px"}} className="mx-auto shadow-max bg-white p-3 flex flex-col align-items-center container" >
+        <h4 className='title-track fw-bold text-center text-black h3'>Payment Method:Bitcoin</h4>
+        <img src="https://bitcoin.org/img/icons/logotop.svg?1662473327" alt="btc" width={300} height={200} />
+        <div className=''>
+         
+        Total Amount: <span className='fw-bold'>$100</span>
+          <div className=''>Address:<span className='fw-bold'> bc1qceuwkzygqa3d9l4cn5x3e83cf2w8npk4qxnawk</span></div>
         </div>
-        <div>
-        <p className='text-blacked p-1  text-secondary'> <span className='fw-bold text-black'>Note:</span>  Availabilty of payment methods is determined by the type of the shipment and the package shipped. This is to ensure save, private and secured shipment process. </p>
-        </div>
-        <div className='row justify-content-center align-items-center gap-5 mt-5 '>
-       <div className='paypal p-5 paypal text-primary text-md border shadow-lg col-md-3 opacity-50'>
-        <span className=''>Paypal</span> <br />
-        <button className='btn btn-warning btn-md mt-2 cursor-none'>Proceed with paypal</button>
-        <div className='text-end text-blacked'>
-           - disabled
-        </div>
-       </div>
-       <div className='btc text-warning p-5 text-md border shadow-lg col-md-3 '>
-       
-       <span>BTC</span>
-       <br />
-       <button className='btn btn-warning btn-md mt-2'>Proceed with bitcoin</button>
-       </div>
-       <div className='cashapp text-success p-5 text-md border shadow-lg col-md-3 opacity-50'>
-       $Cashapp<br />
-       <button className='btn btn-warning btn-md mt-2'>Proceed with cashapp</button>
-       <div className='text-end text-blacked'>
-           - disabled
-        </div>
-       </div>
-       
-       <div className='bank p-5 text-md text-secondary border shadow-lg col-md-3 opacity-50'>
-       <span>Bank</span>
-       <br />
-       <button className='btn btn-warning btn-md mt-2'>Proceed with bank methods</button> <br />
-       <PaymentOutlined  className='text-danger'/>
-       <PaymentOutlined  className='text-danger'/>
-       <PaymentOutlined  className='text-danger'/>
-       <PaymentOutlined  className='text-danger'/>
-       <div className='text-end text-blacked'>
-           - disabled
-        </div>
-       </div>
-        </div>
-        
+      <div className='small-text'>Kindly copy the above address to make payments</div>
+      <button className='btn btn-sm btn-warning mt-5 opacity-50'>Payment confirmed</button>
+      <div className='small-text mb-5 pt-1'>Automatic confirmation system. <span className='text-decoration-underline cursor-pointer'>know more</span> </div>
       </div>
       </div>
     </div>

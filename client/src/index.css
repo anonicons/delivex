@@ -552,3 +552,13 @@ input{
 .text-md{
   font-size: 30px;
 }
+.small-text{
+  font-size: 10px;
+  color: rgb(110, 64, 64);
+}
+.cursor-pointer{
+  cursor: pointer;
+}
+.okoto{
+  color: #000000;
+}

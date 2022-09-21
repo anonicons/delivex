@@ -15,6 +15,7 @@ import {Provider, useDispatch, useSelector} from "react-redux"
 import {store} from './store/index'
 import { useEffect } from 'react';
 import { authActions } from './store/authSlice';
+import Payment from './pages/Payment';
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
 <Route path='/realm' element={<Login />} />
 <Route path='/master' element={!isLoggedIn? <Nopage />:<Admin />} />
 <Route path='/track' element={<Trackpage />} />
+<Route path='/payment' element={<Payment />} />
   </Routes>
   </HashRouter>
     </div>

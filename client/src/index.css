@@ -540,3 +540,15 @@ input{
   font-size: 70px;
 }
 
+.payment{
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.066),rgba(0, 0, 0, 0.06)),url('images/track.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.text-md{
+  font-size: 30px;
+}

@@ -22,7 +22,7 @@ useEffect(
  )
   return (
     <div className='product-details d-flex flex-column align-items-center justify-content-center fonta' >
-        <h4> <span className='fw-bold'>Estimated arrival:</span> (2 days)</h4>
+        <h4><span className='fw-bold'>Estimated arrival:</span>(1 day)</h4>
     <h3 className='text-blacked client-mssg'>Dear {shipment.client}, here is the summary of your shipment</h3>
 
         <div className="trackCard d-flex flex-column align-items-center justify-content-center border-2 border-dark position-relative p-5 rounded shadow-max">
@@ -40,7 +40,7 @@ useEffect(
        <div className="title-track fw-bold text-warning"><ArrowBack /></div>
         
         <div className="final pt-4 text-center">
-        <p className=' m-0 '>Final destination</p>
+        <p className='m-0'>Final destination</p>
             <p className='text-secondary m-0'>{shipment.final}</p>
         </div>
 

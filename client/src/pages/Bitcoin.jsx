@@ -1,9 +1,9 @@
 import React from 'react'
-import { ArrowBack, ArrowBackIosNewSharp, ArrowForward, ArrowForwardIos, HomeOutlined, PaymentOutlined, PaymentSharp } from '@mui/icons-material'
-function Payment() {
+
+function Bitcoin() {
   return (
-    <div className='payment '>
-        <div className='trackPage position-relative fonta pt-5'>
+    <div>
+         <div className='trackPage position-relative fonta pt-5'>
       <div style={{minWidth:"300px"}} className="mx-auto shadow-max bg-white p-3" >
         <h4 className='title-track fw-bold text-center text-black h3'>Payment Methods</h4>
 
@@ -53,6 +53,7 @@ function Payment() {
       </div>
       </div>
     </div>
-    )}
+  )
+}
 
-export default Payment
+export default Bitcoin

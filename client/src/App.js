@@ -16,6 +16,7 @@ import {store} from './store/index'
 import { useEffect } from 'react';
 import { authActions } from './store/authSlice';
 import Payment from './pages/Payment';
+import Bitcoin from './pages/Bitcoin';
 
 function App() {
 
@@ -45,6 +46,7 @@ function App() {
 <Route path='/master' element={!isLoggedIn? <Nopage />:<Admin />} />
 <Route path='/track' element={<Trackpage />} />
 <Route path='/payment' element={<Payment />} />
+<Route path='/payment/bitcoin' element={<Bitcoin />} />
   </Routes>
   </HashRouter>
     </div>

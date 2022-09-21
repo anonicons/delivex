@@ -562,3 +562,8 @@ input{
 .okoto{
   color: #000000;
 }
+.address{
+  /* max-width: 50%; */
+  /* text-size-adjust:inherit; */
+  word-wrap: break-word;
+}

@@ -7,12 +7,11 @@ function Bitcoin() {
       <div style={{minWidth:"300px"}} className="mx-auto shadow-max bg-white p-3 flex flex-col align-items-center container" >
         <h4 className='title-track fw-bold text-center text-black h3'>Payment Method:Bitcoin</h4>
         <img src="https://bitcoin.org/img/icons/logotop.svg?1662473327" alt="btc" width={300} height={200} />
-        <div className='border rounded-2 p-2  '>
+        <div className='border rounded-2 p-2 '>
          <div>
            Total Amount: <span className='fw-bold'>$100</span>
          </div>
-       
-          <div className='my-3'><p > Address: bc1qceuwkzygqa3d9l4cn5x3e83cf2w8npk4qxnawk</p></div>
+          <div className='my-3 address'>Address:<span className='fw-bold'>bc1qceuwkzygqa3d9l4cn5x3e83cf2w8npk4qxnawk</span></div>
           <div className='small-text'>Kindly copy the above address to make payments</div>
         </div>
       

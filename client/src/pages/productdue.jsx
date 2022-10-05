@@ -22,8 +22,8 @@ useEffect(
  )
   return (
     <div className='product-details d-flex flex-column align-items-center justify-content-center fonta' >
-        <div className='d-flex align-items-center justify-content-center h4'>
-        Package Estimated Arrival Time:<span className='fw-bold'> 4days</span> 
+        <div className='d-flex flex-column align-items-center justify-content-center'>
+            <span className='fw-bold text-success'>Package is already on location</span> <button className='btn btn-warning btn-sm my-3' onClick={() => navigate('/payment')}> {">>>"} Proceed to clear your package </button>
         </div>
         
     <h3 className='text-blacked client-mssg'>Dear {shipment.client}, here is the summary of your shipment</h3>

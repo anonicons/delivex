@@ -23,7 +23,8 @@ useEffect(
   return (
     <div className='product-details d-flex flex-column align-items-center justify-content-center fonta' >
         <div className=' px-3 h5 text-secondary'>
-        Package Estimated Arrival Time:<span className='fw-bold text-dark'> 4days</span> 
+        Package Estimated Arrival Time:<span className='fw-bold text-black
+        '> 4days</span> 
         </div>
         
     <h3 className='text-blacked client-mssg'>Dear {shipment.client}, here is the summary of your shipment</h3>

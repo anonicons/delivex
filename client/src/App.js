@@ -7,7 +7,7 @@ import Layout from './pages/Layout';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import ProductDesc from './pages/ProductDes';
+import ProductDesc from './pages/productdue';
 import Login from './pages/Login';
 import Admin from './pages/Admin';
 import Trackpage from './pages/trackpage';

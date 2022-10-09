@@ -17,10 +17,10 @@ function Footer() {
         <footer className='footer p-5 mt-5 text-small'>
        <div className="row">
            <div className='contact-footer  pt-3 col-md-4'><img src={img} alt="logo img"  className='logo-footer pb-3 '/>
-           <h3 className='text-small pe-3'><House className=''/>561) 972-7813
+           <h3 className='text-small pe-3'><House className=''/>(561)-972-7813
 19037, Florida(FL), 33469 </h3>
            <h3 className='text-small'><Phone className=''/> 01-7004271</h3>
-           <h3 className='text-small'><Send className=''/> Delivex@union.fl</h3>
+           <h3 className='text-small'><Send className=''/> Delivaexpress@deliva.com</h3>
        </div>
        <div className="products col-md-4  pt-3">
     <h2>Products</h2>

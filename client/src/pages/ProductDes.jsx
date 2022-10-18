@@ -3,7 +3,7 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 
-function ProductDesc() {
+function ProductDes() {
     const [shipment,setShipment] = useState({})
     const navigate = useNavigate()
     const id = useParams().id
@@ -61,4 +61,4 @@ useEffect(
   )
 }
 
-export default ProductDesc
+export default ProductDes;

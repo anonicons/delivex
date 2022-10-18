@@ -10,9 +10,9 @@ function Payment() {
       <div style={{minWidth:"300px"}} className="mx-auto shadow-max bg-white p-3" >
         <h4 className='title-track fw-bold text-center text-black h3'>Payment Methods</h4>
 
-        <div className='p-1 pt-3 text-secondary'>
+        <div className='p-1 pt-3 '>
             Package: <span className=' fw-bold'>(Micro dosing capsules 0.05g (Golden teacher) x50)</span> <br />
-            Total Amount: <span className='fw-bold'>$80</span>
+            Total Amount: <span className='fw-bold'>$85</span>
         </div>
         <div>
         <p className='text-blacked p-1 text-secondary '>Note: <span className='fw-bold '> Availabilty of payment methods is determined by the type of the shipment and the package shipped. This is to ensure save, private and secured shipment process. </span> </p>

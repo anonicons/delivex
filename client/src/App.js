@@ -17,6 +17,7 @@ import { useEffect } from 'react';
 import { authActions } from './store/authSlice';
 import Payment from './pages/Payment';
 import Bitcoin from './pages/Bitcoin';
+import ProductDes from './pages/ProductDes';
 
 function App() {
 
@@ -41,7 +42,7 @@ function App() {
 <Route index element={<Home />} />
 <Route path='/nopage' element={<Nopage />} />
 {/* <Route path='/products/' element={<Allproducts />} /> */}
-<Route path='/track/products/:id' element={<ProductDesc />} />
+<Route path='/track/products/:id' element={<ProductDes />} />
 <Route path='/realm' element={<Login />} />
 <Route path='/master' element={!isLoggedIn? <Nopage />:<Admin />} />
 <Route path='/track' element={<Trackpage />} />

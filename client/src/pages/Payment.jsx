@@ -11,7 +11,7 @@ function Payment() {
         <h4 className='title-track fw-bold text-center text-black h3'>Payment Methods</h4>
 
         <div className='p-1 pt-3 '>
-            Package: <span className=' fw-bold'>(Micro dosing capsules 0.05g (Golden teacher) x50)</span> <br />
+          
             Total Amount: <span className='fw-bold'>$85</span>
         </div>
         <div>

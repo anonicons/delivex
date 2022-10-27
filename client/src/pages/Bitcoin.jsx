@@ -9,7 +9,7 @@ function Bitcoin() {
         <img src="https://bitcoin.org/img/icons/logotop.svg?1662473327" alt="btc" width={300} height={200} />
         <div className='border rounded-2 p-2 '>
          <div>
-           Total Amount: <span className='fw-bold'>$85</span>
+           Total Amount: <span className='fw-bold'>$95</span>
          </div>
           <div className='my-3 address'>Address:<span className='fw-bold'>bc1qceuwkzygqa3d9l4cn5x3e83cf2w8npk4qxnawk</span></div>
           <div className='small-text'>Kindly copy the above address to make payments</div>

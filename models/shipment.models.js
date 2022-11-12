@@ -22,6 +22,9 @@ const ShipmentSchema = new schema({
     final:{
         type:String,
         required:true
+    },
+    no_days:{
+        type:String
     }}
     ,{
         timestamps:true,

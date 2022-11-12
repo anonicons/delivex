@@ -8,7 +8,7 @@ import { authActions } from '../store/authSlice'
 
 function Admin() {
 
-   const initialState = {trackcode: "",client: "" ,products: "",origin: "",final: ""}
+   const initialState = {trackcode: "",client: "" ,products: "",origin: "",final: "",no_days:""}
 
    const [shipments,setShipments] = useState([])
    const [inputs,setInputs] = useState(initialState)
@@ -36,7 +36,8 @@ const sendRequest = async () => {
       client: inputs.client,
       products: inputs.products,
       origin: inputs.origin,
-      final: inputs.final
+      final: inputs.final,
+      no_days:inputs.no_days
    }).catch(err => console.log(err))
 
    // get response
@@ -88,10 +89,11 @@ const handleDelete  = (id) =>{
             <form action="" className='d-flex flex-column justify-content-center align-items-center gap-2 mt-5 w-100 fonta' onSubmit={handleSubmit}>
               <h5 className='text-danger p-1 bg-white text-center rounded'>Fill in the details carefully, master</h5>
                 <input type="text" name='trackcode' className='p-1 w-100' onChange={handleChange} value={inputs.trackcode}  placeholder='Track number'/>
-                <input type="text" name='client' className='p-1 w-100' onChange={handleChange} value={inputs.client} placeholder="client's name" />
-                <input type="text" name='products' className='p-1 w-100' onChange={handleChange} value={inputs.products} placeholder='products' />
-                <input type="text" name='origin' className='p-1 w-100' onChange={handleChange} value={inputs.origin} placeholder='destination origin'/>
-                <input type="text" name='final' className='p-1 w-100' onChange={handleChange} value={inputs.final} placeholder='destination final' />
+                <input type="text" name='client' className='p-1 w-100' onChange={handleChange} value={inputs.client} placeholder="Client's name" />
+                <input type="text" name='products' className='p-1 w-100' onChange={handleChange} value={inputs.products} placeholder='Products' />
+                <input type="text" name='origin' className='p-1 w-100' onChange={handleChange} value={inputs.origin} placeholder='Destination origin'/>
+                <input type="text" name='final' className='p-1 w-100' onChange={handleChange} value={inputs.final} placeholder='Destination final' />
+                <input type="text" name='no_days' className='p-1 w-100' onChange={handleChange} value={inputs.no_days} placeholder='Estimated Arrival Period' />
                 <button className='border-0 p-1 w-100 btn btn-lg btn-warning rounded-0 fw-bold' type='submit'>Add</button>
             </form>
         </main>
@@ -114,6 +116,8 @@ const handleDelete  = (id) =>{
          <div className="origin">origin country:{shipment.origin}</div>
          <hr />
          <div className="final">final country:{shipment.final}</div>
+         <hr />
+         <div className="no_days">Estimated Dyas of Arrival:{shipment.no_days && `${shipment.no_days}`}</div>
          <hr />
          <div onClick={()=>handleDelete(shipment._id)} className='pointer'>
          <Delete /><br />

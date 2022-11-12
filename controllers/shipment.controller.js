@@ -25,7 +25,7 @@ const addShipment =  async (req,res) => {
 
     let existingShipment;
     
-    const {trackcode,client,products,origin,final} = req.body;
+    const {trackcode,client,products,origin,final,no_days} = req.body;
 
     try{
         existingShipment = await Shipment.findOne({trackcode})
@@ -39,7 +39,7 @@ const addShipment =  async (req,res) => {
 
     // An instance of the shipment
     const newShipment =  new Shipment(
-        {trackcode,client,products,origin,final} 
+        {trackcode,client,products,origin,final,no_days} 
     );
     
    await newShipment.save()
